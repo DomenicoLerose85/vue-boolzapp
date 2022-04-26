@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.background_header{
+    width: 100vw;
+    height: 15vh;
+    background-color: #009688;
+}
+
+.background_main_body{
+    width: 100vw;
+    height: calc(100vh - 15vh);
+    background-color: #d5dbd8;
+}
