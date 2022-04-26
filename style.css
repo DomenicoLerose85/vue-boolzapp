@@ -4,9 +4,14 @@
     box-sizing: border-box;
 }
 
+.debug{
+    border: 1px solid black;
+}
+
 body {
     font-family: 'Lato', sans-serif;
 }
+
 
 .background_header{
     width: 100vw;
@@ -18,4 +23,16 @@ body {
     width: 100vw;
     height: calc(100vh - 15vh);
     background-color: #d5dbd8;
+}
+
+.main_container{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.left_aside{
+    width: 30%;
+    height: 90%;
 }
