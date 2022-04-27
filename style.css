@@ -296,6 +296,7 @@ main{
     margin-left: 15px;
     color: #918f8f;
 }
-.input-group{
 
+.active{
+    background-color: #516c6b;
 }
