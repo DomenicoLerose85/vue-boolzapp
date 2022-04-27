@@ -31,6 +31,7 @@ main{
 
 .row{
     height: 80vh;
+    --bs-gutter-x: 0;
 } 
 
 .very_top_section{
@@ -45,12 +46,14 @@ main{
     border-radius: 50%; 
     padding-top: 2px;
     margin-top: 3px;
+    margin-left: 5px;
 }
 
 .very_top_section span{
     text-align: center;
     font-size: 12px;
     color: #516c6b;
+    margin-left: 5px;
 }
 
 .fas.fa-circle-notch{
@@ -82,7 +85,7 @@ main{
 
 .top_section{
     width: 100%;
-    height: 15%;
+    height: 13%;
     background-color: #8edafc;
 }
 
@@ -92,6 +95,7 @@ main{
 
 .fas.fa-bell-slash{
     margin-top: 18px;
+    margin-left: 5px;
     background-color: white;
     font-size: 30px;
     color: #8edafc;
@@ -99,17 +103,19 @@ main{
 }
 
 .text span{
-    font-size: 9px;
+    font-size: 12px;
     font-weight: bold;
     padding-left: 40px;
+    margin-left: 5px;
 }
 
 .text .notifiche{
     color: #6da1bd;
     text-decoration: underline;
-    font-size: 8px;
+    font-size: 10px;
     padding-left: 40px;
     margin-top: -2px;
+    margin-left: 5px;
 }
 
 .search{
@@ -124,7 +130,7 @@ main{
 }
 
 .fas.fa-search{
-    background-color: #fefefe;
+    /* background-color: #fefefe; */
     color: grey;
     font-size: 10px;
 }
@@ -145,32 +151,151 @@ main{
     width: 15%;
     height: 80%;
     border-radius: 50%;
-    margin-top: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
 .contact2 img {
     width: 15%;
     height: 80%;
     border-radius: 50%;
-    margin-top: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
 .contact3 img{
     width: 15%;
     height: 80%;
     border-radius: 50%;
-    margin-top: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
-.contact1, .contact2, .contact3 span{
+.contact1, .contact2, .contact3, span{
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.contact1 p{
+    color: grey; 
+    font-size: 8px;
+    padding-left: 46px;
+    margin-top: -20px;
+    margin-left: 20px;
+}
+
+.contact2 p {
+    color: grey;
+    font-size: 8px;
+    padding-left: 46px;
+    margin-top: -20px;
+    margin-left: 20px;
+}
+
+.contact3 p {
+    color: grey;
+    font-size: 8px;
+    padding-left: 46px;
+    margin-top: -20px;
+    margin-left: 20px;
+}
+
+
+.header{
+    width: 100%;
+    height: 10%;
+    background-color: #e0dddd;
+    border-left: 0.5px solid grey;
+}
+
+.icons_right{
+    float: right;
+    margin-top: -52px;
+}
+
+.fas.fa-search-plus{
+    width: 10%;
+    height: 10%;
+    color: #b1b1b1;
+    font-size: 11px;
+    margin-left: 0px;
+    margin-top: 14px;
+}
+
+.fas.fa-paperclip{
+    width: 10%;
+    height: 10%;
+    color: #b1b1b1;
+    font-size: 11px;
+    margin-left: 15px;
+    margin-top: 14px;
+}
+
+.fas.fa-ellipsis-v{
+    width: 10%;
+    height: 10%;
+    color: #b1b1b1;
+    display: inline;
+    font-size: 11px;
+    margin-left: 5px;
+    margin-top: 14px;
+}
+
+.header img{
+    width: 8%;
+    height: 80%;
+    border-radius: 50%;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+.header p{
+    color: grey;
+    font-size: 8px;
+    padding-left: 46px;
+    margin-top: -16px;
+    margin-left: 32px;
+}
+
+.header span{
     font-size: 10px;
     font-weight: bold;
 }
 
-.caontact1, p{
-    color: grey; 
-    font-size: 8px;
-    padding-left: 46px;
-    margin-top: -16px;
+.main{
+    width:100%;
+    height: 80%;
+    background-image: url(/img/mine.jpg);    
 }
 
+.green-txt{
+    width: 350px;
+    height: 50px;
+    float: right;
+    background-color: rgba(62, 243, 71, 0.849);
+    margin-left: 50px;
+    border-radius: 10px;
+}
+
+.white-txt{
+    width: 350px;
+    height: 50px;
+    float: left;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.footer{
+    width: 100%;
+    height: 10%;
+    background-color: #e0dddd;
+}
+
+.fas.fa-microphone{
+    margin-left: 15px;
+    color: #918f8f;
+}
+.input-group{
+
+}
