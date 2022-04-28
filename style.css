@@ -105,7 +105,7 @@ main{
 }
 
 .fas.fa-bell-slash{
-    margin-top: 18px;
+    margin-top: 12px;
     margin-left: 5px;
     background-color: white;
     font-size: 30px;
@@ -135,7 +135,6 @@ main{
 
 .search{
     width: 100%;
-    height: 7%;
     background-color: #fefefe;
 }
 
@@ -348,5 +347,5 @@ main{
 }
 
 .active{
-    background-color: #5d7271;
+    background-color: #6b7978;
 }
