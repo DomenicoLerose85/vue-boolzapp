@@ -10,6 +10,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    
 }
 
 main{
@@ -66,6 +67,10 @@ main{
     
 }
 
+.fas.fa-circle-notch:hover{
+    cursor: pointer;
+}
+
 .fas.fa-comment-alt{
     width: 5%;
     height: 5%;
@@ -74,6 +79,9 @@ main{
     font-size: 11px;
     
 }
+.fas.fa-comment-alt:hover{
+    cursor: pointer;
+}
 
 .fas.fa-ellipsis-v{
     width: 5%;
@@ -81,6 +89,9 @@ main{
     color: #b1b1b1;
     display: inline;
     font-size: 11px;
+}
+.fas.fa-ellipsis-v:hover{
+    cursor: pointer;
 }
 
 .top_section{
@@ -116,6 +127,10 @@ main{
     padding-left: 40px;
     margin-top: -2px;
     margin-left: 5px;
+}
+
+.notifiche:hover{
+    cursor: pointer;
 }
 
 .search{
@@ -201,6 +216,19 @@ main{
     margin-left: 20px;
 }
 
+.contact1:hover {
+    background-color: rgb(151, 150, 150);
+    cursor: pointer;
+}
+.contact2:hover {
+    background-color: rgb(151, 150, 150);
+    cursor: pointer;
+}
+.contact3:hover{
+    background-color: rgb(151, 150, 150);
+    cursor: pointer;
+}
+
 
 .header{
     width: 100%;
@@ -222,6 +250,9 @@ main{
     margin-left: 0px;
     margin-top: 14px;
 }
+.fas.fa-search-plus:hover{
+    cursor: pointer;
+}
 
 .fas.fa-paperclip{
     width: 10%;
@@ -230,6 +261,9 @@ main{
     font-size: 11px;
     margin-left: 15px;
     margin-top: 14px;
+}
+.fas.fa-paperclip:hover{
+    cursor: pointer;
 }
 
 .fas.fa-ellipsis-v{
@@ -240,6 +274,9 @@ main{
     font-size: 11px;
     margin-left: 5px;
     margin-top: 14px;
+}
+.fas.fa-ellipsis-v:hover{
+    cursor: pointer;
 }
 
 .header img{
@@ -302,7 +339,14 @@ main{
     margin-left: 15px;
     color: #918f8f;
 }
+.fas.fa-microphone:hover{
+    cursor: pointer;
+}
+
+.far.fa-smile:hover{
+    cursor: pointer;
+}
 
 .active{
-    background-color: #516c6b;
+    background-color: #5d7271;
 }

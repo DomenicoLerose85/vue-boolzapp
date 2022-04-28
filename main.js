@@ -1,5 +1,5 @@
 
-;
+
 
 const app = new Vue({
     el: '#app',
@@ -82,12 +82,20 @@ const app = new Vue({
         },
         sendMessage() {
             const newMessage = {
-                date: '28/03/2020 10:20:10',
+                date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
                 message: this.message,
                 status: 'sent'
             };
+            const answerMessage = {
+                date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
+                message: 'Ok..',
+                status: 'received'
+            };
             this.contacts[this.currentIndex].messages.push(newMessage);
             this.message = '';
+            setTimeout(() => {
+                this.contacts[this.currentIndex].messages.push(answerMessage);
+            },2000)
         }
     }
 });
