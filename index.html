@@ -46,6 +46,7 @@
                                 </div>
                                 <div class="col-4 contacts">
                                     <div class="contact1" @click="currentIndex = index" v-for="(contact, index) in contacts" :class=" (index === currentIndex) ? 'active' : '' " @click="viewChat(index)">
+                                        <!-- <div></div> -->
                                         <img :src="'img/avatar'+ contact.avatar +'.jpg'" :alt="'Avatar ' + contact.name" >
                                         <span>{{contact.name}}</span>
                                         <p>Ultimo messaggio inviato</p>
@@ -54,9 +55,9 @@
                             </div>  
                         </div>
                         <div class="col-8">
-                            <div class="col-12 header" @click="currentIndex = index" v-for="(contact, index) in contacts" :class=" (index === currentIndex) ? 'active' : '' ">
-                                    <img :src="'img/avatar'+ contact.avatar +'.jpg'" :alt="'Avatar ' + contact.name">
-                                    <span>{{contact.name}}</span>
+                            <div class="col-12 header" >
+                                    <img :src="'img/avatar'+ contacts[currentIndex].avatar +'.jpg'">
+                                    <span>{{contacts[currentIndex].name}}</span>
                                     <p>Ultimo accesso: oggi alle 12:00</p>
                                 <div class="icons_right">
                                     <i class="fas fa-search-plus"></i>
@@ -65,7 +66,7 @@
                                 </div>
                             </div>
                             <div class="col-12 main">
-                                <div class="green-txt" v-for="(item, index) in contacts [currentIndex].messages " :key="index" :class="item.status === 'sent' ? 'sent' : 'received' ">
+                                <div class="green-txt" v-for="(item, index) in contacts [currentIndex].messages " :key="index" :class="item.status === 'sent' ? 'green-txt' : 'white-txt' ">
                                     <span>{{item.message}}</span>
                                     <span>{{item.date}}</span>
                                 </div>
