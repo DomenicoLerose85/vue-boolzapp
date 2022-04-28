@@ -73,9 +73,21 @@ const app = new Vue({
             },
         ],
         currentIndex: 0,
+        searchText: '',
+        messages: '',
     },
     methods: {
-        
+        viewChat(index) {
+            this.currentIndex = index;
+        },
+        sendMessage() {
+            const newMessage = {
+                date: '28/03/2020 10:20:10',
+                message: this.message,
+                status: 'sent'
+            };
+            this.contacts[this.currentIndex].messages.push(newMessage);   
+        }
     }
 });
 

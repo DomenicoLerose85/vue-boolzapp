@@ -44,7 +44,7 @@
                                     </div>
                                 </div>
                                 <div class="col-4 contacts">
-                                    <div class="contact1" @click="currentIndex = index" v-for="(contact, index) in contacts" :class=" (index === currentIndex) ? 'active' : '' ">
+                                    <div class="contact1" @click="currentIndex = index" v-for="(contact, index) in contacts" :class=" (index === currentIndex) ? 'active' : '' " @click="viewChat(index)">
                                         <img :src="'img/avatar'+ contact.avatar +'.jpg'" :alt="'Avatar ' + contact.name" >
                                         <span>{{contact.name}}</span>
                                         <p>Ultimo messaggio inviato</p>
@@ -64,14 +64,16 @@
                                 </div>
                             </div>
                             <div class="col-12 main">
-                                <div class="green-txt"></div>
-                                <div class="white-txt"></div>
+                                <div class="green-txt" v-for="(item, index) in contacts [currentIndex].messages " :key="index" :class="item.status === 'sent' ? 'sent' : 'received' ">
+                                    <span>{{item.message}}</span>
+                                </div>
+                                <!-- <div class="white-txt">bbb</div> -->
                             </div>
                             <div class="col-12 footer">
                                 <div class="input-group">
                                     <span class="input-group-text" id="basic-addon1"><i class="far fa-smile"></i><i class="fas fa-microphone"></i></span>
                                     <input type="text" class="form-control" placeholder="Scrivi un messaggio"
-                                        aria-label="Inizia una nuova chat" aria-describedby="basic-addon1">
+                                        aria-label="Inizia una nuova chat" aria-describedby="basic-addon1" v-model="message" @keyup.enter="sendMessage()">
                                 </div>
                             </div>
                         </div>
