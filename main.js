@@ -95,8 +95,8 @@ const app = new Vue({
             this.message = '';
             setTimeout(() => {
                 this.contacts[this.currentIndex].messages.push(answerMessage);
-            },2000)
-        }
+            }, 2000)
+        },
     }
 });
 
